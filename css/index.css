@@ -24,6 +24,7 @@ main {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 35px;
 }
 .card .card-header,
 .card .card-body,
@@ -48,6 +49,7 @@ main {
 .card .card-body p.name {
   font-size: 18px;
   font-weight: 700;
+  color: hsl(229, 23%, 23%);
 }
 .card .card-body p.name span {
   color: hsl(227, 10%, 46%);
@@ -72,6 +74,7 @@ main {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 10px;
+  color: hsl(229, 23%, 23%);
 }
 .attribution {
   font-size: 11px;
@@ -83,5 +86,13 @@ main {
 @media screen and (max-width: 700px) {
   main {
     background: url(../images/bg-pattern-bottom.svg) top 50vh left 30vw no-repeat, url(../images/bg-pattern-top.svg) bottom 50vh right 30vw no-repeat;
+  }
+}
+@media screen and (max-width: 500px) {
+  main {
+    padding: 0px 20px;
+  }
+  .card {
+    width: 100%;
   }
 }
