@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+
+  background-color: hsl(185, 75%, 39%);
+}
+main {
+  min-height: 100vh;
+  background: url(../images/bg-pattern-bottom.svg) top 52vh left 50vw no-repeat, url(../images/bg-pattern-top.svg) bottom 49vh right 51vw no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  width: 400px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card .card-header,
+.card .card-body,
+.card .card-footer {
+  padding: 10px;
+}
+.card .card-header {
+  background: url(../images/bg-pattern-card.svg) no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.card .card-header img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  transform: translateY(65%);
+  margin-bottom: 10px;
+}
+.card .card-body {
+  margin: 70px 0 20px;
+  text-align: center;
+}
+.card .card-body p.name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.card .card-body p.name span {
+  color: hsl(227, 10%, 46%);
+  margin-left: 10px;
+}
+.card .card-body p.city {
+  margin-top: 10px;
+  color: hsl(227, 10%, 46%);
+}
+.card .card-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-top: 1px solid hsl(229, 23%, 65%);
+}
+.card .card-footer div {
+  flex: 1;
+  text-align: center;
+  color: hsl(227, 10%, 46%);
+}
+.card .card-footer div p.stats {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 700px) {
+  main {
+    background: url(../images/bg-pattern-bottom.svg) top 50vh left 30vw no-repeat, url(../images/bg-pattern-top.svg) bottom 50vh right 30vw no-repeat;
+  }
+}
